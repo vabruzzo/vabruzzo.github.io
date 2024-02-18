@@ -12,7 +12,6 @@ body {
 }
 
 header {
-  /* border-bottom: 1px solid #bbb; */
   margin-bottom: 1rem;
 }
 
@@ -74,6 +73,14 @@ h5,
 h6 {
   font-family: "Roboto Mono", "sans-serif";
   font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
 }
 
 ul {
