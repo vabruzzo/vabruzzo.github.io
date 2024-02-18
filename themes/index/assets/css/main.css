@@ -12,6 +12,9 @@ body {
 }
 
 header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 1rem;
 }
 
@@ -42,9 +45,6 @@ a.active {
   color: pink;
   transition: color 100ms linear;
   transition: background-color 100ms linear;
-}
-
-nav {
 }
 
 nav a,
@@ -122,11 +122,27 @@ header,
   }
 }
 
-::selection { 
+::selection {
   color: pink;
   background: #333;
 }
 
-#reactions { 
+#reactions {
   display: none;
+}
+
+.socialLink {
+  border-bottom: none;
+}
+
+a.socialLink,
+a.socialLink:focus,
+a.socialLink:active {
+  background-color: transparent;
+}
+
+.socialMediaIcon {
+  fill: #333;
+  height: 2.5rem;
+  width: 2.5rem;
 }
