@@ -2,12 +2,17 @@ body {
   background-color: #eee;
   color: #333;
   font-family: sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem
   line-height: 1.5;
-  margin: 2rem;
+  margin: 0;
+
+  @media only screen and (min-width: 666px) {
+    font-size: 1.25rem;
+  }
 }
 
 header {
+  /* border-bottom: 1px solid #bbb; */
   margin-bottom: 1rem;
 }
 
@@ -26,6 +31,8 @@ a {
   color: #333;
   padding: 0 0px;
   text-decoration: none;
+  transition: color 100ms linear;
+  transition: background-color 100ms linear;
 }
 
 a:hover,
@@ -34,20 +41,29 @@ a:active,
 a.active {
   background-color: #333;
   color: #eee;
+  transition: color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+nav {
+}
+
+nav a,
+a.titleLink {
+  border-bottom: transparent;
+  display: inline-block;
 }
 
 nav a {
-  border-bottom: transparent;
-  display: inline-block;
-  width: 200px;
+  width: 100%;
+
+  @media only screen and (min-width: 666px) {
+    width: 200px;
+  }
 }
 
 body {
   font-family: "Roboto Mono", "sans-serif";
-}
-
-h1 {
-  /* background-color: pink; */
 }
 
 h1,
@@ -57,27 +73,49 @@ h4,
 h5,
 h6 {
   font-family: "Roboto Mono", "sans-serif";
+  font-weight: 400;
 }
 
 ul {
-  /* margin: 0; */
   padding: 0;
 }
 
 li {
   list-style-type: none;
-  width: 200px;
+  width: 100%;
+
+  @media only screen and (min-width: 666px) {
+    width: 200px;
+  }
 }
 
-/* nav {
-  width: 400px;
-} */
-
 main {
+  height: 100%;
   margin: 0 auto;
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
+
+  @media only screen and (min-width: 666px) {
+    padding-left: 2rem;
+  }
 }
 
 .page {
-  display: flex;
+  @media only screen and (min-width: 666px) {
+    display: flex;
+  }
+}
+
+header,
+.page {
+  padding: 0 1rem;
+
+  @media only screen and (min-width: 666px) {
+    padding: 0 2rem;
+  }
+}
+
+::selection { 
+  color: pink;
+  background: #666;
 }
