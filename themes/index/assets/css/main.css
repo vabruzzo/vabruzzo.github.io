@@ -126,3 +126,7 @@ header,
   color: pink;
   background: #333;
 }
+
+#reactions { 
+  display: none;
+}
